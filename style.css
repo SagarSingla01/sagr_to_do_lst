@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Handlee&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    font-family: "Handlee", cursive;
+    height: 100%;
+}
+body{
+    /* display : flex; */
+    justify-content: center;
+    align-items: center;
+}
+.todo{
+    height: 200px;
+    width: 450px;
+    background-color: pink;
+    margin: 0px auto;
+    font-family: "Handlee", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.2rem;
+    display: flex;
+    /* padding-top: 10px; */
+    
+    flex-direction: column;
+    align-items: center;
+    
+}
+p{
+    margin-bottom: 40px;
+}
+.btn-add{
+    width: 100px  !important;
+}
+    
+    
+input{
+    width: 300px !important;
+    outline: none;
+}
+.list{
+    /* background-color: pink; */
+    width : 800px;
+    margin: auto;
+}
+.some{
+    display: flex;
+    justify-content: space-evenly;
+}
+select{
+    width: 200px !important;
+}
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+ul li{
+    width: 800px;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+}
+ul li div{
+    /* height: 100px; */
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+ul li button{
+    height: 35px;
+    font-size: 1rem;
+    
+}
+ul li p{
+    height: auto;
+    padding: 5px;
+    max-width: 400px;
+    min-width: 400px;
+    overflow-x: hidden;
+    
+    /* height: fit-content; */
+    background-color: aliceblue;
+}
+ul li input{
+    height: 20px;
+    width: 20px;
+    background-color: red !important;
+}
+.eror{
+    font-size: 1.2rem;
+    width: 300px !important;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display :none;
+    
+}
+.progress,.progress-bar,.alert{
+    margin: 0;
+    border-radius: 0px !important;
+}
+.progress{
+    background-color: green !important;
+}
+.progress-bar{
+    background-color: white !important;
+}
+.progress{
+    height: 5px;
+}
+
+@media (max-width : 900px) {
+        .list{
+            width: 400px;
+
+        }
+        ul li p{
+            max-width: 200px;
+            min-width: 200px;
+        }
+        ul li{
+            width: 400px;
+        }
+        ul li div{
+            /* height: 100px; */
+            width: 140px;
+        }
+
+}
